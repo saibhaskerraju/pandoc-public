@@ -1,0 +1,8 @@
+services:
+  pandoc:
+    build:
+      target: dev
+      context: .
+    volumes:
+      - .:/workspace:cached
+    command: sleep infinity

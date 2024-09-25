@@ -1,0 +1,19 @@
+{
+	"name": "pandoc",
+	"dockerComposeFile": ["../compose-pandoc.yml"],
+	"service": "pandoc",
+	"shutdownAction": "stopCompose",
+	"workspaceFolder": "/workspace/",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"tomoki1207.pdf"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/python:1": {}
+	}
+
+}
